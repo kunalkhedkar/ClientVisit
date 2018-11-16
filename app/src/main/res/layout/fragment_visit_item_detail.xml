@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:id="@+id/date_time_card"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="date"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="time"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/date_time_card"
+                android:layout_marginTop="5dp">
+
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/problem_sloved_status_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <RelativeLayout
+                        android:id="@+id/solved_status_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/problem_sloved_status_msg_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Problem solved status"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/colorAccent"
+                            android:id="@+id/problem_sloved_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/visited_person_contact_card"
+                    app:cardCornerRadius="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/problem_sloved_status_card"
+                    android:layout_marginTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/msg_visited_person"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Visited Person"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/name_visited_person"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/msg_visited_person"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_below="@+id/msg_visited_person"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/contact_visited_person"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="10dp"
+                    android:id="@+id/reason_of_visit_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/visited_person_contact_card"
+                    android:layout_marginTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/msg_reason_behind_visit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reason behind visit"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/reason_of_visit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/msg_reason_behind_visit"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reason_of_visit_card">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/msg_feedback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Customer feedback"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/feedback_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/msg_feedback"
+                            android:padding="7dp"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
